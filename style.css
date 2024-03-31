@@ -9,41 +9,121 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 3.8vw;
 }
 
 /* Section de apresentação */
 #section-apresentacao {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  gap: 10rem;
   height: 100vh;
   width: 100vw;
   padding: 3.5rem 3rem;
   text-align: center;
   color: white;
   background-image: linear-gradient(#564561, #AD88C6);
+  position: relative;
 }
 
 #apresentacao {
   opacity: 60%;
-  font-size: 20px;
+  font-size: 5vw;
   font-weight: 700;
 }
 
 #section-apresentacao h1 {
-  font-size: 48px;
+  font-size: 12vw;
   font-weight: 700;
 }
 
+
 #section-apresentacao nav {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 3rem 3.5rem 3rem;
 }
 
-#section-apresentacao > nav > a {
-  font-size: 3rem;
+#section-apresentacao nav a {
+  font-size: 10vw;
   color: white;
+}
+
+#section-apresentacao nav a:last-child {
+  font-size: 9vw;
+}
+
+#section-apresentacao nav a:hover {
+  transform: translate(0, -0.2rem);
+  color: #FDF0D1;
+}
+
+/* Versão Desktop */
+@media (min-width: 1024px) {
+  /* Section de apresentação */
+  #section-apresentacao {
+    justify-content: center;
+    align-items: end;
+    gap: 0.4rem;
+    text-align: start;
+    position: static;
+    padding: 10vh 26vw;
+  }
+
+  #apresentacao {
+    text-align: start;
+    font-size: 1.5vw;
+    width: 100%;
+  }
+
+  #section-apresentacao div {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    gap: 0.5rem 0;
+    width: 100%;
+  }
+
+  #section-apresentacao h1 {
+    line-height: 90%;
+    font-size: 8vw;
+  }
+
+  #section-apresentacao nav {
+    justify-content: start;
+    align-items: end;
+    gap: 0.5rem;
+    position: static;
+    padding: 0;
+  }
+
+  #section-apresentacao nav a:first-child {
+    font-size: 0.85rem;
+  }
+
+  #section-apresentacao nav a {
+    font-size: 0.8rem;
+    transition: 0.3s;
+  }
+
+  #section-apresentacao nav a:last-child {
+    font-size: 0.7rem;
+  }
+
+  #section-apresentacao h1:last-child {
+    grid-column: 1 / 3;
+  }
+
+  #descricao {
+    width: 65%;
+    text-align: end;
+    font-size: 1vw;
+    margin-right: 0.1rem;
+  }
 }
