@@ -163,7 +163,6 @@ body {
 
 .projeto img {
   width: 70vw;
-  height: auto;
 }
 
 .projeto h2 {
@@ -177,4 +176,44 @@ body {
   font-size: 1.4rem;
   text-align: center;
   font-weight: 700;
+}
+
+/* Versão da section de projetos Desktop */
+@media (min-width: 1024px) {
+  #projetos-pessoais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 4rem;
+  }
+  
+  #projetos-pessoais h1 {
+    text-align: start;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+
+  #projetos {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projeto img {
+    width: 6.5rem;
+  }
+
+  .projeto a {
+    height: 4.5rem;
+  }
+
+  .projeto h2 {
+    font-size: 0.3rem;
+    margin-top: 0.3rem;
+  }
+
+  .projeto p {
+    font-size: 0.3rem;
+  }
 }
