@@ -15,6 +15,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: black;
+  overflow-x: hidden;
 }
 
 /* Section de apresentação */
@@ -146,6 +147,7 @@ body {
 #projetos-pessoais h1 {
   font-size: 7vw;
   font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 #projetos {
@@ -184,13 +186,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 10vh 15vw 0 15vw;
   }
   
   #projetos-pessoais h1 {
     text-align: start;
     font-size: 0.5rem;
     width: 100%;
+    margin-bottom: 0rem;
   }
 
   #projetos {
@@ -201,7 +204,7 @@ body {
   }
 
   .projeto img {
-    width: 6.5rem;
+    width: 23vw;
   }
 
   .projeto a {
