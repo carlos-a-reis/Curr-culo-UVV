@@ -13,7 +13,7 @@
 
 /* Configurações globais */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ body {
   padding: 3.5rem 3rem;
   text-align: center;
   color: white;
-  background-image: linear-gradient(#564561, #AD88C6);
+  background-image: linear-gradient(#564561, #ad88c6);
   position: relative;
 }
 
@@ -44,7 +44,6 @@ body {
   font-size: 12vw;
   font-weight: 700;
 }
-
 
 #section-apresentacao nav {
   display: flex;
@@ -68,7 +67,7 @@ body {
 
 #section-apresentacao nav a:hover {
   transform: translate(0, -0.2rem);
-  color: #FDF0D1;
+  color: #fdf0d1;
 }
 
 /* Versão da section de apresentação Desktop */
@@ -141,7 +140,7 @@ body {
   height: 100vh;
   width: 100vw;
   padding: 3.5rem 3rem;
-  background-image: linear-gradient(#AD88C6, #E3C99D);
+  background-image: linear-gradient(#ad88c6, #e3c99d);
 }
 
 #projetos-pessoais h1 {
@@ -188,7 +187,7 @@ body {
     align-items: center;
     padding: 10vh 15vw 0 15vw;
   }
-  
+
   #projetos-pessoais h1 {
     text-align: start;
     font-size: 0.5rem;
@@ -230,7 +229,7 @@ body {
   height: 200vh;
   width: 100vw;
   padding: 0 2.5rem;
-  background-image: linear-gradient(#E3C99D, #89C7A4);
+  background-image: linear-gradient(#e3c99d, #89c7a4);
 }
 
 #habilidades h1 {
@@ -262,17 +261,18 @@ body {
   position: relative;
 }
 
-.fa-certificate, .fa-check {
+.fa-certificate,
+.fa-check {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.fa-certificate{
+.fa-certificate {
   font-size: 18vw;
   margin-right: -5vw;
   margin-top: -5vw;
-  color: #89C78F;
+  color: #89c78f;
 }
 
 .fa-check {
@@ -314,7 +314,7 @@ body {
   gap: 2%;
 }
 
-#lista-habilidades h1{
+#lista-habilidades h1 {
   height: 5%;
 }
 
@@ -325,7 +325,8 @@ body {
   height: 10%;
 }
 
-#habilidades-tecnicas, #habilidades-interpessoais {
+#habilidades-tecnicas,
+#habilidades-interpessoais {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -339,11 +340,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  justify-items: start;
   height: 60%;
 }
 
-#habilidades-tecnicas li, #habilidades-interpessoais li {
+#habilidades-tecnicas li,
+#habilidades-interpessoais li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,7 +356,8 @@ body {
   font-size: 1.8rem;
 }
 
-#habilidades-tecnicas p, #habilidades-interpessoais p {
+#habilidades-tecnicas p,
+#habilidades-interpessoais p {
   text-align: start;
   font-weight: 700;
 }
@@ -369,4 +371,118 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: 60%;
+}
+
+/* Versão da section de habilidades Desktop */
+@media (min-width: 1024px) {
+  #habilidades {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 15vw;
+  }
+
+  #habilidades h1 {
+    font-size: 0.5rem;
+    text-align: start;
+    height: auto;
+  }
+
+  /* Section de Habilidades */
+  /* Certidicados */
+
+  #lista-certificados {
+    width: auto;
+    gap: 1rem;
+  }
+
+  #lista-certificados ul {
+    height: auto;
+    gap: 0.5rem;
+  }
+
+  .certificado {
+    width: 4.5rem;
+  }
+
+  .fa-certificate {
+    font-size: 1.2rem;
+    margin-right: -0.3rem;
+    margin-top: -0.4rem;
+  }
+
+  .fa-check {
+    font-size: 0.6rem;
+    margin-right: -0.1rem;
+    margin-top: -0.1rem;
+  }
+
+  .certificado div {
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    padding: 6%;
+  }
+
+  .certificado h2,
+  .certificado h3 {
+    font-size: 0.21rem;
+  }
+
+  .certificado p {
+    font-size: 0.19rem;
+  }
+
+  /* Section de Habilidades */
+  /* Habilidades */
+
+  #lista-habilidades {
+    width: auto;
+    gap: 0.9rem;
+  }
+
+  #lista-habilidades h2 {
+    font-size: 0.4rem;
+    text-align: start;
+    height: auto;
+  }
+
+  #habilidades-tecnicas h2,
+  #habilidades-interpessoais h2,
+  #habilidades-tecnicas ul,
+  #habilidades-interpessoais ul {
+    height: auto;
+  }
+
+  #habilidades-tecnicas,
+  #habilidades-interpessoais {
+    gap: 0.1rem;
+    height: auto;
+  }
+
+  #habilidades-tecnicas ul {
+    grid-template-columns: repeat(2, 4rem);
+    grid-template-rows: repeat(3, 1rem);
+  }
+
+  #habilidades-interpessoais ul {
+    grid-template-columns: repeat(2, 4rem);
+    grid-template-rows: repeat(2, 1rem);
+  }
+
+  #habilidades-tecnicas li,
+  #habilidades-interpessoais li {
+    justify-content: start;
+    align-items: end;
+    gap: 0.2rem;
+  }
+
+  #habilidades-tecnicas i {
+    font-size: 0.5rem;
+  }
+
+  #habilidades-tecnicas p,
+  #habilidades-interpessoais p {
+    font-size: 0.3rem;
+  }
 }
