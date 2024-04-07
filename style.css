@@ -356,6 +356,13 @@ body {
   font-size: 1.8rem;
 }
 
+#habilidades-tecnicas img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 10%;
+  margin-bottom: 0.05rem;
+}
+
 #habilidades-tecnicas p,
 #habilidades-interpessoais p {
   text-align: start;
@@ -481,9 +488,15 @@ body {
     font-size: 0.5rem;
   }
 
+  #habilidades-tecnicas img {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+
   #habilidades-tecnicas p,
   #habilidades-interpessoais p {
     font-size: 0.3rem;
+    margin-bottom: 0.06rem;
   }
 }
 
@@ -495,10 +508,17 @@ body {
   height: 100vh;
   width: 100vw;
   padding: 3.5rem 3rem;
-  background-image: linear-gradient(#89C7A4, #564561);
+  background-image: linear-gradient(#89c7a4, #564561);
 }
 
 #cartao-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#informacoes-perfil {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -508,10 +528,9 @@ body {
   padding: 5.5rem 1.5rem 2rem 1.5rem;
   color: white;
   background-color: #564561;
-  position: relative;
 }
 
-#cartao-perfil h1 {
+#informacoes-perfil h1 {
   display: none;
 }
 
@@ -524,15 +543,83 @@ body {
   position: absolute;
   top: 0;
   margin-top: -3rem;
+  overflow: hidden;
 }
 
-#cartao-perfil nav {
+#foto-perfil img {
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+  position: absolute;
+  right: -2rem;
+}
+
+#informacoes-perfil nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-#cartao-perfil i {
+#informacoes-perfil i {
   color: white;
   font-size: 3rem;
+}
+
+/* Versão da section de sobre Desktop */
+@media (min-width: 1024px) {
+  #sobre {
+    padding: 2rem 3rem;
+  }
+  
+  #cartao-perfil {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    position: static;
+  }
+  
+  #informacoes-perfil {
+    gap: 0.5rem;
+    height: auto;
+    width: 40%;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  #informacoes-perfil h1 {
+    display: block;
+    width: 100%;
+    text-align: start;
+    font-size: 0.5rem;
+  }
+
+  #informacoes-perfil p {
+    font-size: 0.3rem;
+  }
+  
+  #foto-perfil {
+    width: 6rem;
+    height: 7rem;
+    border-radius: 10%;
+    border: none;
+    position: static;
+    margin-top: 0;
+    order: 2;
+    overflow: hidden;
+  }
+  
+  #foto-perfil img {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  
+  #informacoes-perfil nav {
+    width: 45%;
+  }
+  
+  #informacoes-perfil i {
+    font-size: 0.6rem;
+  }
 }
