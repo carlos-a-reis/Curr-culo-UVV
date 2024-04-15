@@ -1,0 +1,29 @@
+#section-apresentacao nav a,
+.projeto,
+.certificado,
+#informacoes-perfil nav i {
+  transition: 0.3s;
+}
+
+#section-apresentacao nav a:hover {
+  transform: translate(0, -0.2rem);
+  color: #fdf0d1;
+}
+
+.projeto:hover,
+.certificado:hover {
+  scale: 1.1;
+}
+
+#foto-perfil img {
+  transition: 1.5s;
+}
+
+#foto-perfil:hover img {
+  scale: 1.2;
+}
+
+#informacoes-perfil nav i:hover {
+  scale: 1.2;
+  color: #fdf0d1;
+}

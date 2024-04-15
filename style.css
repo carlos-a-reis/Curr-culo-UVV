@@ -22,9 +22,8 @@ body {
 #section-apresentacao {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  gap: 10rem;
   height: 100vh;
   width: 100vw;
   padding: 3.5rem 3rem;
@@ -36,13 +35,17 @@ body {
 
 #apresentacao {
   opacity: 60%;
-  font-size: 5vw;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 #section-apresentacao h1 {
-  font-size: 12vw;
+  font-size: 3rem;
   font-weight: 700;
+}
+
+#descricao {
+  margin-bottom: 25vh;
 }
 
 #section-apresentacao nav {
@@ -57,17 +60,28 @@ body {
 }
 
 #section-apresentacao nav a {
-  font-size: 10vw;
+  font-size: 2.5rem;
   color: white;
 }
 
 #section-apresentacao nav a:last-child {
-  font-size: 9vw;
+  font-size: 2.3rem;
 }
 
-#section-apresentacao nav a:hover {
-  transform: translate(0, -0.2rem);
-  color: #fdf0d1;
+/* Versão da section de apresentação Tablet */
+@media (min-width: 600px) {
+  #apresentacao {
+    font-size: 1rem;
+  }
+  
+  #section-apresentacao h1 {
+    font-size: 2rem;
+  }
+  
+  #descricao {
+    margin-bottom: 30vh;
+    font-size: 0.7rem;
+  }
 }
 
 /* Versão da section de apresentação Desktop */
@@ -113,7 +127,6 @@ body {
 
   #section-apresentacao nav a {
     font-size: 0.8rem;
-    transition: 0.3s;
   }
 
   #section-apresentacao nav a:last-child {
@@ -129,6 +142,7 @@ body {
     text-align: end;
     font-size: 1vw;
     margin-right: 0.1rem;
+    margin-bottom: 0;
   }
 }
 
@@ -179,8 +193,35 @@ body {
   font-weight: 700;
 }
 
+/* Versão da section de projetos Tablet */
+@media (min-width: 600px) {  
+  #projetos-pessoais {
+    padding: 2rem 1rem;
+  }
+
+  #projetos-pessoais h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  
+  .projeto img {
+    width: 8rem;
+  }
+  
+  .projeto h2 {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  }
+  
+  .projeto p {
+    font-size: 0.6rem;
+  }
+}
+
 /* Versão da section de projetos Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   #projetos-pessoais {
     display: flex;
     flex-direction: column;
@@ -433,7 +474,7 @@ body {
 
   .certificado h2,
   .certificado h3 {
-    font-size: 0.21rem;
+    font-size: 0.2rem;
   }
 
   .certificado p {
@@ -565,6 +606,33 @@ body {
   font-size: 3rem;
 }
 
+/* Versão da section de sobre Tablet */
+@media (min-width: 600px) {
+  #foto-perfil {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  #informacoes-perfil {
+    height: 75vh;
+    padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  #informacoes-perfil p {
+    font-size: 21px;
+  }
+  
+  #informacoes-perfil nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #informacoes-perfil i {
+    font-size: 2rem;
+  }
+}
+
 /* Versão da section de sobre Desktop */
 @media (min-width: 1024px) {
   #sobre {
@@ -610,8 +678,8 @@ body {
   }
   
   #foto-perfil img {
-    width: 100%;
-    height: 100%;
+    width: 101%;
+    height: 101%;
     position: static;
   }
   
